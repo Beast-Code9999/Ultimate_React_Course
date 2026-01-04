@@ -48,11 +48,36 @@ const pizzaData = [
   
 
 function App() {
-    return <h1>Hello World!</h1>
+    return (
+        <div> 
+            <h1>Hello World!</h1>
+            <Pizza />
+            <Pizza />
+            <Pizza />
+        </div>
+    )
+}
+
+function Header() {
+
+}
+
+function Menu() {
+
+}
+
+function Footer() {
+    
 }
 
 function Pizza() {
-
+    return (
+        <div> 
+            <img alt='test'></img>
+            <h2>1</h2>
+            <p>1</p>
+        </div>
+    )
 }
 
 // where the root will be rendered in the public folder
