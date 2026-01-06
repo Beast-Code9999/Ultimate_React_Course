@@ -73,7 +73,8 @@ function Menu() {
 }
 
 function Footer() {
-    return <footer>This is the footer {new Date().toLocaleTimeString()}</footer>
+    const year = new Date().getFullYear();
+    return <footer>This is the footer {year}</footer>
 }
 
 function Pizza() {
