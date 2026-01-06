@@ -58,7 +58,9 @@ function App() {
 }
 
 function Header() {
-    return <h1>Test Header</h1>
+  // adding styles as objects in JavaScript mode
+    const style = {color: "red"}
+    return <h1 style={style}>Test Header</h1>
 }
 
 function Menu() {
