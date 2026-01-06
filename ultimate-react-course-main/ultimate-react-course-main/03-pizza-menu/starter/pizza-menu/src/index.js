@@ -50,24 +50,30 @@ const pizzaData = [
 function App() {
     return (
         <div> 
-            <h1>Hello World!</h1>
-            <Pizza />
-            <Pizza />
-            <Pizza />
+            <Header />
+            <Menu />
+            <Footer />
         </div>
     )
 }
 
 function Header() {
-
+    return <h1>Test Header</h1>
 }
 
 function Menu() {
-
+    return (
+      <div>
+        <h1>Our menu is here</h1>
+        <Pizza />
+        <Pizza />
+        <Pizza />
+      </div>   
+    )
 }
 
 function Footer() {
-    
+    return <footer>This is the footer {new Date().toLocaleTimeString()}</footer>
 }
 
 function Pizza() {
