@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'
+import './index.css'
 
 const pizzaData = [
     {
@@ -49,7 +50,7 @@ const pizzaData = [
 
 function App() {
     return (
-        <div> 
+        <div className='container'> 
             <Header />
             <Menu />
             <Footer />
@@ -59,18 +60,24 @@ function App() {
 
 function Header() {
   // adding styles as objects in JavaScript mode
-    const style = {color: "red"}
-    return <h1 style={style}>Test Header</h1>
+    const style = {}
+    return (
+      <header className='header'>
+        <h1 style={style}>Test Header</h1>
+      </header>
+    )
 }
 
 function Menu() {
     return (
-      <div>
-        <h1>Our menu is here</h1>
-        <Pizza />
-        <Pizza />
-        <Pizza />
-      </div>   
+      <main className='menu'>
+        <div>
+          <h1>Our menu is here</h1>
+          <Pizza />
+          <Pizza />
+          <Pizza />
+        </div> 
+      </main>
     )
 }
 
